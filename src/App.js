@@ -9,7 +9,10 @@ import Footer from './components/Footer/Footer'
 import CoinDetails from './components/CoinDetails/CoinDetails';
 import BdAddress from "./components/Contact/BdAddress";
 import UsAddress from "./components/Contact/UsAddress";
-import NotFound from "./components/NotFound/NotFound"
+import NotFound from "./components/NotFound/NotFound";
+import Login from './components/Login/Login';
+import Signup from "./components/Signup/Signup";
+
 
 const App = () => {
   return (
@@ -24,7 +27,9 @@ const App = () => {
           <Route path="bd-address" element={<BdAddress></BdAddress>}></Route>
           <Route path="us-address" element={<UsAddress></UsAddress>}></Route>
         </Route >
-        <Route path="about" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path='/login' element={<Login />}></Route>
+        <Route path='/signup' element={<Signup></Signup>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
 
